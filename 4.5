@@ -1,0 +1,38 @@
+// Alyssa Delgado
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+  
+  cout << "--------------------------------" << endl;
+  cout<<"Alyssa Delgado"<<endl;
+  cout<< "Computer Science 1"<<endl;
+  cout<<"Lab 4"<<endl;
+  cout<<"February 17th, 2023"<<endl;
+  cout << "--------------------------------" << endl;
+  
+	double bills[4];  // the water bills for the previous 4 quarters
+	double avg;       // average monthly bill
+	
+	for ( int i = 0 ; i < 4 ; i++ ) {
+		cout << "\nPlease input your water bill for quarter " << i+1 << ":\n";
+		cin >> bills[i];
+		avg += bills[i];
+	}
+	avg /= 12.0;
+	
+	cout << "\nYour average monthly bill is $"
+	     << setprecision(2) << fixed << avg
+	     << ". ";
+	if (avg > 75.00)
+		cout << "You are using excessive amounts of water.\n";
+	else if (avg > 25.00)
+		cout << "You are using a typical amount of water.\n";
+	else
+		cout << "Thanks for conserving water!\n";
+	
+	return 0;
+}
+
