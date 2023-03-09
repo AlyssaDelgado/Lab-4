@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+  
+int main() {
+    float fahren, celsius; 
+    
+    //Instruct user to input temperature 
+    cout << "Enter the temperature in fahrenheit\n"; 
+    cin >> fahren;
+     
+    //Calculate the conversion
+    celsius = 5 * (fahren - 32) / 9;  
+    
+    //Output data 
+    cout << fahren <<" Fahrenheit is equal to "  
+        << celsius <<" Celsius";
+      
+    return 0;
+}
